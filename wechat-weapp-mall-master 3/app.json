@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/index",
+    "pages/my/index",
+    "pages/balance/index",
+    "pages/qryBalance/index"
+  ],
+  "window":{
+      "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序演示",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+   "color": "#000000",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#E6E6E6",
+    "position" : "bottom",
+    "list": [{
+      "pagePath":"pages/index/index",
+      "iconPath":"images/1.png",
+      "selectedIconPath":"images/1-1.png",
+      "text":"投资理财"
+    },{
+      "pagePath":"pages/balance/index",
+      "iconPath":"images/2.png",
+      "selectedIconPath":"images/2 -2.png",
+      "text":"余额查询"
+    }, {
+      "pagePath": "pages/my/index",
+      "iconPath": "images/3.png",
+      "selectedIconPath":"images/3-1.png",
+      "text": "我的"
+    }]
+  },
+  "debug": true
+}

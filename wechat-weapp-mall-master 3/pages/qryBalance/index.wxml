@@ -1,0 +1,13 @@
+<view class="page">
+    <view class="text">尊敬的{{custName}}先生/女士，您的账户余额如下:</view>
+    <view class="card">
+        <view class="bg-area">
+            <image class="img" src="../../images/logo@2x.png"></image>
+        </view>
+        <view class="text-area">
+            <view class="cardNo">**** **** ***** {{rows.cardNo}}</view>
+            <view class="balance">活期账户余额{{rows.msg}}</view>
+        </view>
+        
+    </view>
+</view>

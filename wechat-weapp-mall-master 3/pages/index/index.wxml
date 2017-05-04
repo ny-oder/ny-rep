@@ -1,0 +1,72 @@
+<view class="listView" wx:for="{{rebby}}">
+    <navigator url="../detail/index?prdName={{item.prdName}}&typeName={{item.typeName}}&prdcode={{item.prdCode}}&riskName={{item.riskName}}&interestDays={{item.interestDays}}&ipoStartDate={{item.ipoStartDate}}&ipoEndDate={{item.ipoEndDate}}&incomeDate={{item.incomeDate}}&endDate={{item.endDate}}&psubUnit={{item.psubUnit}}&nav={{item.nav}}&issDate={{item.issDate}}" open-type="navigate">
+        <view class="product">
+             <view class="productType" wx:if="{{item.prdTemplate == 1102}}">封闭型</view>
+            <view class="productType" wx:elif="{{item.prdTemplate == 1401}}">滚续型</view>
+            <view class="productType" wx:elif="{{item.prdTemplate == 1105}}">滚存型</view>
+            <view class="productType" wx:elif="{{item.prdTemplate == 1100}}">开放型</view>
+            <view class="productType" wx:elif="{{item.prdTemplate == 1200}}">货币式</view>
+            <view class="productType" wx:elif="{{item.prdTemplate == 1300}}">净值型</view>
+            <view class="productType" wx:elif="{{item.prdTemplate == 8801}}">基金</view>
+            <view class="productType" wx:elif="{{item.prdTemplate == 0102}}">信托</view>
+            <view class="productType" wx:else="{{item.prdTemplate == 1700}}">开放型</view>
+            <view class="productTitle">{{item.prdName}}</view>
+            <view class="productInfo">
+            <view class="fieldView" style="paddingLeft:140.625rpx;font-size:28.125rpx">
+                    <label class="label_first">产品代码：</label>
+                    <label class="label_second">
+                        <text>{{item.prdCode}}</text>
+                    </label>
+                </view>
+                <view class="fieldView" style="paddingLeft:140.625rpx;font-size:28.125rpx">
+                    <label class="label_first">风险等级：</label>
+                    <label class="label_second">
+                        <text>{{item.riskName}}</text>
+                    </label>
+                </view>
+                <view class="fieldView" style="padding-left:225rpx;font-size:28.125rpx">
+                    <label class="label_first">预期年化收益率：</label>
+                    <label class="label_second">
+                        <text class="red">{{item.nav?"--":item.modelComment}}</text>
+                    </label>
+                </view>
+            
+            
+                <view class="fieldView" style="padding-left:196.875rpx;font-size:28.125rpx">
+                    <label class="label_first">认购起点金额：</label>
+                    <label>
+                        <label class="label_second">
+                            <text>CNY {{item.psubUnit}}</text>
+                            <text>.00</text>
+                        </label>
+                    </label>
+                </view>
+           
+            
+                <view class="fieldView" style="paddingLeft:140.625rpx;font-size:28.125rpx">
+                    <label class="label_first">产品期限：</label>
+                    <label class="label_second">{{item.interestDays}}天</label>
+                </view>
+            
+            
+                <view class="fieldView" style="paddingLeft:140.625rpx;font-size:28.125rpx">
+                    <label class="label_first">销售日期：</label>
+                    <label class="label_second">{{item.ipoStartDate}} 到 {{item.ipoEndDate}}</label>
+                </view>
+            
+            
+                <block wx:if="{{item.nav?true : false}}">
+                    <view class="fieldView" style="paddingLeft:421.875rpx;font-size:28.125rpx">
+                        <label class="label_first">产品净值：</label>
+                        <label class="label_second">{{item.nav}}</label>
+                    </view>
+                    <view class="fieldView" style="paddingLeft:421.875rpx;font-size:28.125rpx">
+                        <label class="label_first">净值日期：</label>
+                        <label class="label_second">{{item.issDate}}</label>
+                    </view>
+                </block>
+
+            </view>
+        </view>
+    </navigator>
+</view>

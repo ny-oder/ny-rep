@@ -1,0 +1,86 @@
+<view class="page">
+    <view class="addPadding">
+
+        <view class="header">
+            
+            <view class="layout">
+                <view  class="invt delimiter">
+                    <view>
+                        <view>风险等级</view>
+                        <view class="red_text">{{d.riskName}}</view>
+                    </view>
+                </view>
+                <view class="invt delimiter">
+                    <view>
+                        <view>年收益</view>
+                        <view class="red_text">5%</view>
+                    </view>
+                </view>
+                <view class="invt">
+                    <view>
+                        <view>理财天数</view>
+                        <view class="red_text">{{d.interestDays}}天</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="body">
+            <view class="paddding">
+                <view class="productInfo">
+                    <view class="fieldView">
+                        <text>产品名称：</text>
+                        <text>{{d.prdName}}</text>
+                    </view>
+                    <view class="fieldView">
+                        <text>产品收益分类：</text>
+                        <text>{{d.typeName}}</text>
+                    </view>
+                    <view class="fieldView">
+                        <text>募集期：</text>
+                        <text>{{d.ipoStartDate}} 到 {{d.ipoEndDate}}</text>
+                    </view>
+                    <view class="fieldView">
+                        <text>产品起息日：</text>
+                        <text>{{d.incomeDate}}</text>
+                    </view>
+                    <view class="fieldView">
+                        <text>产品到期日：</text>
+                        <text>{{d.endDate}}</text>
+                    </view>
+                    <view class="fieldView">
+                        <text>币种：</text>
+                        <text>人民币</text>
+                    </view>
+                    <view class="fieldView">
+                        <text>认购起点：</text>
+                        <text>CNY {{d.psubUnit}}.00</text>
+                    </view>
+                </view>
+                <view class="invt_cont">
+                相关资料：
+                    <view class="red_text">
+                        <text>产品说明书，</text>
+                        <text>产品协议书，</text>
+                        <text>客户权益须知，</text>
+                        <text>风险揭示书</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+        <view class="footer">
+            <image class="bgr" src="../../images/safe_custom_bg.png"></image>
+            <view class="footer-bg">
+                客服热线
+                <text style="color:#000000;">4000-961818</text>
+                <text style:="color:blue;text-decoration: underline;">客户端下载</text>
+            </view>
+            <view class="footer-content">
+                <view class="copy">广东南粤银行 版权所有</view>
+                <view class="copyright">Copyright © 2015 GUANGDONG NANYUE BANK.All Rights Reserved.</view>
+            </view>
+        </view>
+
+    </view>
+</view>

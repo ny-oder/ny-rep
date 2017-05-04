@@ -1,0 +1,137 @@
+.page{
+    position:relative;
+    display:block;
+    bottom:0rpx;
+    right:0rpx;
+    left:0rpx;
+    top:0rpx;
+    padding-bottom:187.5rpx;
+    min-height:1050rpx;
+    font-family: 'Arial';
+    background-color:white;
+}
+.addPadding{
+    position:relative;
+    display:block;
+    margin:0rpx;
+    padding: 181.25rpx 0rpx 0rpx !important;
+}
+.title{
+    padding: 0rpx 105.468rpx;
+    text-align: center;
+}
+.layout{
+    position:relative;
+    display:block;
+	padding:23.437rpx 0;
+	text-align:center;
+	line-height:44.531rpx;
+	float:left;
+    width:100%;
+}
+.delimiter:before{
+ content:' ';
+ position:absolute;
+ width:2.343rpx;
+ height:60%;
+ top:20%;
+ right:0rpx;
+ background-color:#aaa; 
+}
+.invt{
+    position:relative;
+    display:block;
+    line-height:44.531rpx;
+    text-align:center;
+    padding:23.437rpx 0rpx;
+    width:246rpx;
+    float:left;
+}
+.red_text{
+    color:#d62823;
+}
+.header{
+    position: fixed;
+    display: block;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(249,248,249,0.95);
+    border-bottom: 1rpx solid #b2b2b2;
+    width: 100%;
+    min-width: 750rpx;
+    z-index: 150;
+}
+.body{
+    position:relative;
+    display:block;
+}
+.paddding{
+    padding-top:46.875rpx;
+    padding-bottom:76.875rpx;
+    padding-left: 70.312rpx;
+    padding-right: 70.312rpx;
+}
+.productInfo{
+    padding-top: 11.718rpx;
+}
+.invt_cont{
+    position:relative;
+    margin-top:46.875rpx;
+    font-size:32.812rpx;
+    line-height:46.875rpx;
+    width:100%;
+}
+.fieldView{
+    font-size:28.125rpx;
+	padding:7.031rpx 0rpx;
+	line-height:37.5rpx;
+	color:#000000;
+}
+.copy{
+    line-height:32.812rpx;
+	height:32.812rpx;
+}
+.copyright{
+    font-size:21.093rpx;
+	margin-top:4.687rpx;
+	line-height:32.812rpx;
+	height:32.812rpx;
+}
+.footer{
+    position: absolute;
+    display: block;
+    background-color: #ffffff;
+    border-top: 1px solid #bfbfbf;
+    height: 187.5rpx;
+    width: 100%;
+    text-align: center;
+    padding: 35.156rpx 0rpx;
+}
+.footer-content{
+    position: absolute;
+    display: block;
+    top: 51.562rpx;
+    left: 0rpx;
+    height: 187.5rpx;
+    width: 100%;
+    text-align: center;
+    padding: 35.156rpx 0rpx;
+    z-index: 150;
+    font-size: 28.125rpx;
+    color: #999999;
+}
+.footer-bg{
+    font-size: 28.125rpx;
+    color: #999999;
+    font-family:'Arial';
+}
+.bgr{
+    position:absolute;
+	display:block;
+	left:50%;
+	border:0rpx;
+	height:164.062rpx;
+	width:503.906rpx;
+	margin-left:-253.125rpx;
+    top:0rpx;
+}

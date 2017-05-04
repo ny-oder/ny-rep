@@ -1,0 +1,22 @@
+<view class="pages">
+    <view class="img-area">
+        <image class="img" src="../../images/logo@2x.png"></image>
+    </view>
+    <view class="text">
+        <view class="tele-alea">
+            <image class="tele-img" src="../../images/login.png" mode="aspectFit"></image>
+            <input type="number" class="tele-txt" placeholder="请输入手机号" bindblur="getTele" focus="true" maxlength="11" cursor-spacing="147"/>
+        </view>
+        <view class="delimiter"></view>
+        <view class="tele-alea">
+            <image class="tele-img" src="../../images/pwd.png" mode="aspectFit"></image>
+            <input type="number" class="tele-txt" placeholder="请输入手机验证码" maxlength="4" bindblur="getUserCode" cursor-spacing="100"/>
+            <view class="txt-code" hover="true" hover-class="code-hover" hover-stay-time="100" bindtap="sendSms" >获取验证码</view>
+
+        </view>
+        <view class="delimiter"></view>
+        <view class="tele-btn">
+            <image bindtap="quryBal" class="btn-img" src="../../images/btn.png" mode="scaleToFill"></image>
+        </view>
+    </view>
+</view>

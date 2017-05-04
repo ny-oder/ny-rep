@@ -1,0 +1,37 @@
+ .page{
+    background-color: white;
+    font-family: 'Arial';
+    display: flex;
+    flex-direction: column;
+    padding: 36rpx 25rpx 750rpx 25rpx;
+}
+.text{
+    font-size: 38.5rpx;
+    font-weight: 600;
+    text-align: justify;
+}
+.card{
+    border: 3rpx solid silver;
+    border-style: outset;
+    border-radius: 10rpx;
+    margin: 36rpx 0rpx 0rpx 0rpx;
+}
+.bg-area{
+    background-color: gainsboro;
+}
+.img{
+    height:47.025rpx;
+    width:232.9875rpx;
+    text-align: left;
+    margin: 15rpx 0rpx 15rpx 5rpx;
+}
+.text-area{
+    background-color: white;
+}
+.cardNo{
+    margin: 40rpx 20rpx 40rpx 20rpx;
+}
+.balance{
+    margin: 0rpx 20rpx 30rpx !important;
+    text-align: right;
+}
